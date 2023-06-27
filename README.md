@@ -8,7 +8,7 @@ Project in which the operation of the printf `(_printf)` is simulated, which rec
 ## Authors:
 
 Elijah Mukoro
-### | [Email address](Elidemuk7) |
+### | [Email address](elijahmukoro7@gmail.com) |
 
 Dimpho Tonia Ramphisa
 ### | [Email address](tonia.ramphisa@gmail.com) |
