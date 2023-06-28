@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts - function prints all the chars of a string
+ * _puts_ - function prints all the chars of a string
  *
  * Description: function prints char of a string
  *
@@ -8,7 +8,7 @@
  *
  * Return: the number of chars printed
  */
-int _puts(char *string)
+int _puts_(char *string)
 {
 	int str_point;
 
