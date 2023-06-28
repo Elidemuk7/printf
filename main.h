@@ -6,4 +6,5 @@
 
 int put_char(char c);
 int _printf(const char *format, ...);
-int _puts_copy(char *string);
+int _puts(char *string);
+
