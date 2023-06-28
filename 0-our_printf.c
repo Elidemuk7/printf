@@ -8,34 +8,34 @@
 
 int _printf(const char *format, ...)
 {
-	unsigned e = 0;
-       	unsigned re_val = 0;
+	unsigned int pos = 0;
+	unsigned int re_val = 0;
 	va_list args;
 
 	va_start(args, format);
 
-	for (; format[e] != '\0'; e++)
+	for (; format[pos] != '\0'; pos++)
 	{
-		if (format[e] != '%')
+		if (format[pos] != '%')
 		{
-			put_char(format[e]);
+			put_char(format[pos]);
 		}
-		else if (format[e + 1] == 'c')
+		else if (format[pos + 1] == 'c')
 		{
 			put_char(va_arg(args, int));
-			e++;
+			pos++;
 		}
-		else if (format[e + 1] == 's')
+		else if (format[pos + 1] == 's')
 		{
 			int rval = _puts_(va_arg(args, char *));
 
-			e++;
+			pos++;
 			re_val += (rval - 1);
 		}
-		else if (format[e + 1] == '%')
+		else if (format[pos + 1] == '%')
 		{
 			put_char('%');
-			e++;
+			pos++;
 		}
 		re_val += 1;
 	}
