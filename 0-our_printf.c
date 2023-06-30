@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _printf - prints string while noting specifiers
 * @format: a string input
@@ -35,6 +34,16 @@ int _printf(const char *format, ...)
 		else if (format[pos + 1] == '%')
 		{
 			put_char('%');
+			pos++;
+		}
+		else if (format[pos + 1] == 'd')
+		{
+			print_digits(va_arg(args, int));
+			pos++;
+		}
+		else if (format[pos + 1] == 'i')
+		{
+			print_digits(va_arg(args, int));
 			pos++;
 		}
 		re_val += 1;
