@@ -35,7 +35,7 @@ int _printf(const char *format, ...)
 		else if (format[pos + 1] == '%')
 		{
 			put_char('%');
-/*			pos++;*/
+			pos++;
 		}
 		re_val += 1;
 	}
