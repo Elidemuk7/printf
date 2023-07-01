@@ -6,20 +6,22 @@
  * and a code snippet to insert in a printf file.
  * @num: The number whose digits are to be printed.
  *
- * Return:
+ * Return: Return value counted
  **/
 
-void print_digits(int num)
+int print_digits(int num)
 {
 	int n;
+	int ret_val = 0;
 
 	if (num == 0)
-		return;
+		return (0);
 
 	n = num / 10;
 
 	print_digits(n);
 	put_char(num % 10 + '0');
+	ret_val += 1;
 
-	return;
+	return (ret_val);
 }

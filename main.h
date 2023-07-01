@@ -7,6 +7,6 @@
 int put_char(char c);
 int _printf(const char *format, ...);
 int _puts_(char *string);
-void print_digits(int num);
+int print_digits(int num);
 
 #endif
